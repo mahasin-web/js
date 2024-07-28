@@ -41,5 +41,24 @@ const heros = ["shaktiman", "naagraj", "doga"] //arry
 const myFunction = function(){
     console.log("Demo")
 }
-console.log(typeof myFunction)
+//console.log(typeof myFunction)
 
+
+//++++++++++++++++++++++++++++++++++++++++++
+// Stack - use in Primitive - (Copy of data) changes on copy not source
+let mydogName = "Tommy"
+let anotherName = mydogName
+anotherName = "Tiger"
+// console.log(anotherName)
+// console.log(mydogName)
+// Heap - Reference(Non Primitive) - (Reference of data) changes or overwrite on source
+let userOne ={
+    name: "max",
+    email: "max@max.com",
+    upi: "max@axl"
+}
+let userTwo = userOne
+userTwo.email = "fox@fox.com"
+console.log(userTwo)
+console.log(userOne.email)
+console.log(userTwo.email)
